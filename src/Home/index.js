@@ -21,14 +21,20 @@ class Home extends React.Component {
     });
   }
 
+  handleCallback(results) {
+    this.setState({
+      searchResults: results
+    });
+  }
+
   render() {
     return (
       <div>
         <div>
-          <Header />
+          <Header handleCallback={results => this.handleCallback(results)} />
           {/* <Tarjetas /> */}
           <Carousel title="Video Juegos" products={this.state.result} />
-          <Carousel title="Ropa" products={this.state.searchResults} />
+          <Carousel title="Busqueda" products={this.state.searchResults} />
         </div>
       </div>
     );

@@ -8,9 +8,15 @@ class Carousel extends React.Component {
       <div className="carouselContainer">
         <h2 className="propsTitle">{this.props.title}</h2>
         <div className="carousel-container">
-          {this.props.products.map((item, key) => {
-            return <Item data={item} key={key} />;
-          })}
+          {this.props.products.length > 0 ? (
+            <React.Fragment>
+              {this.props.products.map((item, key) => {
+                return <Item data={item} key={key} />;
+              })}
+            </React.Fragment>
+          ) : (
+            <p>No se encontraron resultados</p>
+          )}
         </div>
       </div>
     );
