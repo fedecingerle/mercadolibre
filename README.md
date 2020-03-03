@@ -1,3 +1,5 @@
+Mercadolibre es un proyecto realizado en React.js, el cual simula el ecommerce mercadolibre. El proyecto todavía no esta terminado por completo. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
