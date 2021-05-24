@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 function Autocomplete(props) {
   const [value, setValue] = useState("");
 
@@ -47,7 +48,7 @@ function Autocomplete(props) {
         }}
       />
       <div onClick={() => handleClick()}>
-        {/* <FontAwesomeIcon icon={faSearch} /> */}
+        <FontAwesomeIcon icon={faSearch} />
       </div>
     </div>
   );

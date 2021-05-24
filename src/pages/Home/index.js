@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Carousel from "../../components/Carousel";
-
+import Footer from "../../components/Footer";
 function Home() {
   const [result, setResult] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
@@ -30,6 +30,7 @@ function Home() {
         <Carousel title="Video Juegos" products={result} />
         <Carousel title="Busqueda" products={searchResults} />
       </div>
+      <Footer />
     </div>
   );
 }

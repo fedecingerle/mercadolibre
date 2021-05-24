@@ -1,15 +1,15 @@
 .headerContainer {
   width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
   height: 85px;
   background-color: #fff159;
   display: flex;
 
-  .imgContainer {
-    margin-top: 10px;
-    .img {
-      width: 134px;
-      height: 34px;
-      margin-left: 300px;
-    }
+  .img {
+    align-items: center;
+    width: 134px;
+    height: 34px;
   }
 }

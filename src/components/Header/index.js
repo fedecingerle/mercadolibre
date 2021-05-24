@@ -10,12 +10,10 @@ function Header(props) {
 
   return (
     <div className="headerContainer">
-      <div className="imgContainer">
-        <img
-          className="img"
-          src="https://http2.mlstatic.com/ui/navigation/4.4.4/mercadolibre/logo__large_plus@2x.png"
-        />
-      </div>
+      <img
+        className="img"
+        src="https://http2.mlstatic.com/ui/navigation/4.4.4/mercadolibre/logo__large_plus@2x.png"
+      />
       <Autocomplete handleSearch={results => handleSearch(results)} />
     </div>
   );
