@@ -21,7 +21,7 @@ function Autocomplete(props) {
   }
 
   async function handlePress(e) {
-    if (e.key == "Enter") {
+    if (e.key === "Enter") {
       const results = await search(value);
 
       props.handleSearch(results.results);

@@ -6,7 +6,7 @@ import "./style.scss";
 function Footer() {
   return (
     <div className="container">
-      <img className="image" src={Logo} />
+      <img className="image" alt="fedeCingerleLogo" src={Logo} />
       <div className="textContainer">
         Made with
         <FontAwesomeIcon icon={faHeart} /> Fede

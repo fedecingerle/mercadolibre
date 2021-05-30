@@ -8,7 +8,7 @@ function Item(props) {
     <Link style={{ textDecoration: "none" }} to={`/producto/${id}`}>
       <div className="itemContainer">
         <div className="imageContainer">
-          <img src={thumbnail} />
+          <img alt="Thumbnail" src={thumbnail} />
         </div>
         <div className="priceContainer">
           <span>$ {price}</span>

@@ -17,10 +17,11 @@
       width: 545px;
       height: 100%;
       border-right: 1.3px solid rgb(240, 236, 236);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
-        margin: 20px 0px 0px 70px;
-        width: 430px;
-        height: 300;
+        width: auto;
       }
     }
     .description {

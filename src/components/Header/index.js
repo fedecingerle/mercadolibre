@@ -1,6 +1,7 @@
 import React from "react";
 import Autocomplete from "../Autocomplete/index.js";
 import "./style.scss";
+import { Link } from "react-router-dom";
 function Header(props) {
   const { handleCallback } = props;
 
@@ -10,10 +11,13 @@ function Header(props) {
 
   return (
     <div className="headerContainer">
-      <img
-        className="img"
-        src="https://http2.mlstatic.com/ui/navigation/4.4.4/mercadolibre/logo__large_plus@2x.png"
-      />
+      <Link to="/">
+        <img
+          alt="MELI"
+          className="img"
+          src="https://http2.mlstatic.com/ui/navigation/4.4.4/mercadolibre/logo__large_plus@2x.png"
+        />
+      </Link>
       <Autocomplete handleSearch={results => handleSearch(results)} />
     </div>
   );
