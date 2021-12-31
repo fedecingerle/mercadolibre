@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import "./style.scss";
 
 function ProductPage(props) {
@@ -19,9 +20,9 @@ function ProductPage(props) {
   }
 
   return (
-    <div>
+    <>
       <Header />
-      <div className="color">
+      <div className="productPage">
         <div className="productPageContainer">
           <div className="productImgContainer">
             {pictures && <img alt="ProductPage" src={pictures[0].url} />}
@@ -36,7 +37,8 @@ function ProductPage(props) {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -24,14 +24,14 @@ function Home() {
   }
 
   return (
-    <div>
+    <>
       <div>
         <Header handleCallback={results => handleCallback(results)} />
         <Carousel title="Video Juegos" products={result} />
         <Carousel title="Busqueda" products={searchResults} />
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -3,14 +3,29 @@
   background-color: rgb(240, 236, 236);
   padding-top: 30px;
   padding-bottom: 30px;
+  .containerCarousel {
+    margin: 0;
+    .no-results {
+      padding-left: 10px;
+    }
+  }
   .propsTitle {
-    margin-left: 265px;
     font-size: 26px;
     font-weight: 300;
+    padding-left: 10px;
   }
-  .carousel-container {
-    display: flex;
-    margin-left: 250px;
-    height: 320px;
+  // .carousel-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   height: 320px;
+  // }
+}
+
+@media (min-width: 500px) {
+  .carouselContainer {
+    .containerCarousel {
+      width: 50%;
+      margin: auto;
+    }
   }
 }
