@@ -7,10 +7,13 @@ import "react-slideshow-image/dist/styles.css";
 function Carousel(props) {
   const { title, products } = props;
   const properties = {
+    duration: 3000,
+    transitionDuration: 500,
     slidesToShow: window.innerWidth > 500 ? 4 : 1,
     slidesToScroll: window.innerWidth > 500 ? 2 : 1,
+    infinite: true,
+    // indicators: true,
   };
-
   return (
     <div className="carouselContainer">
       <div className="containerCarousel">
